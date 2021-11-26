@@ -30,7 +30,7 @@ public class Metodi
     {
         char[][] VigenereMatrix = creaMatrice();
 
-        return VigenereMatrix[ (key>crypted) ? (Math.abs('z'-key)+Math.abs(crypted-'a')+1) : Math.abs((crypted)-(key))][0];
+        return VigenereMatrix[(key>crypted) ? (Math.abs('z'-key)+Math.abs(crypted-'a')+1) : Math.abs((crypted)-(key))][0];
     }
 
     public static String cifraMessaggio(String plainWord, String key)
